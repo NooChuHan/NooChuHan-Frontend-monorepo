@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "14" # 원하는 Node.js 버전 설정
+          node-version: "18" #2024/01 기준 가장 최신
 
       - name: List files in the repository
         run: ls -la
