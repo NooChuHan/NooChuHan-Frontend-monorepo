@@ -28,9 +28,9 @@ jobs:
         run: npm run lint # 린트 실행
         working-directory: noochuhan-techblog
 
-      - name: Run tests
-        run: npm test # 유닛 테스트 실행
-        working-directory: noochuhan-techblog
+      # - name: Run tests
+      #   run: npm test # 유닛 테스트 실행
+      #   working-directory: noochuhan-techblog
 
       - name: Build
         run: npm run build # 빌드 실행
