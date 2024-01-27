@@ -1,0 +1,39 @@
+name: Tech Blog - Next.js CI/CD
+
+on:
+  push:
+    branches: [main] # main 브랜치에 푸시될 때 실행
+  pull_request:
+    branches: [main] # main 브랜치에 대한 PR이 열릴 때 실행
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4 # 레포지토리 체크아웃
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" #2024/01 기준 가장 최신
+
+      - name: List files in the repository
+        run: ls -la
+
+      - name: Install dependencies
+        run: npm install # 또는 yarn install
+        working-directory: noochuhan-techblog
+
+      - name: Run lint
+        run: npm run lint # 린트 실행
+        working-directory: noochuhan-techblog
+
+      # - name: Run tests
+      #   run: npm test # 유닛 테스트 실행
+      #   working-directory: noochuhan-techblog
+
+      - name: Build
+        run: npm run build # 빌드 실행
+        working-directory: noochuhan-techblog
+
+  # Vercel에 배포하기 위한 추가적인 스텝이 필요할 경우 여기에 구성
