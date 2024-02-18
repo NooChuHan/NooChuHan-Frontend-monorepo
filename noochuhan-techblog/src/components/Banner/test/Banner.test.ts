@@ -1,5 +1,5 @@
-import useBanner from '@hooks/useBanner';
 import { expect, it, describe, beforeEach } from '@jest/globals';
+import useBanner from '../../../hooks/useBanner';
 
 describe('useBanner hook test', () => {
   const imgList = [
