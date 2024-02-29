@@ -19,6 +19,8 @@
     "react-icons": "^5.0.1"
   },
   "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
@@ -30,8 +32,6 @@
     "autoprefixer": "^10.0.1",
     "babel-jest": "^29.7.0",
     "eslint": "^8.56.0",
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
     "jest": "^29.7.0",
     "jest-dom": "^4.0.0",
     "jest-environment-jsdom": "^29.7.0",
