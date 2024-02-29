@@ -21,11 +21,11 @@ jobs:
         run: ls -la
 
       - name: Install dependencies
-        run: npm install # 또는 yarn install
+        run: yarn install # 또는 yarn install
         working-directory: noochuhan-techblog
 
       - name: Run lint
-        run: npm run lint # 린트 실행
+        run: yarn run lint # 린트 실행
         working-directory: noochuhan-techblog
 
       # - name: Run tests
@@ -33,7 +33,7 @@ jobs:
       #   working-directory: noochuhan-techblog
 
       - name: Build
-        run: npm run build # 빌드 실행
+        run: yarn run build # 빌드 실행
         working-directory: noochuhan-techblog
 
   # Vercel에 배포하기 위한 추가적인 스텝이 필요할 경우 여기에 구성
