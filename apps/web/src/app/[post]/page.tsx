@@ -1,9 +1,9 @@
 'use client';
-import { markdownToHtml } from '../../../utils/markdownToHtml';
+import { markdownToHtml } from '../../../utils/markdown-to-html';
 import React = require('react');
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { getPostData } from '../../../utils/getPostData';
+import { getPostData } from '../../../utils/get-post-data';
 import mdfile from '../../../posts/test.md';
 
 // const { default: markdown } = await import(`src/contents/blog/${path}`); // 이걸로 대체
