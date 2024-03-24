@@ -17,7 +17,7 @@ export default function useBanner({ imgList }: BannerProps): {
   const [img, setImg] = useState<string[]>(imgList);
   const [index, setIndex] = useState(0);
 
-  const onLeft = () => {
+  const onLeft = (): void => {
     if (index === 0) {
       setIndex(img.length - 1);
     } else {
@@ -25,7 +25,7 @@ export default function useBanner({ imgList }: BannerProps): {
     }
   };
 
-  const onRight = () => {
+  const onRight = (): void => {
     if (index === img.length - 1) {
       setIndex(0);
     } else {
